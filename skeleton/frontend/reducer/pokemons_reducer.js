@@ -1,5 +1,5 @@
 //beware plural pokemons
-import {RECEIVE_ALL_POKEMONS} from '../actions/pokemon_actions';
+import {RECEIVE_ALL_POKEMONS, RECEIVE_SINGLE_POKEMON} from '../actions/pokemon_actions';
 import {merge} from 'lodash';
 
 

@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.pokedex {
+  display: flex;
+}
+
 .poke-thumbnail {
   height: 50px;
   width: 50px;
@@ -17,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 20%;
+  min-width: 85%;
   border: 2px solid #d43316;
   border-radius: 25px;
   padding: 5px;
@@ -32,4 +36,93 @@
   -webkit-transform: rotate(-30deg);
   -ms-transform: rotate(-30deg);
   transform: rotate(-30deg);
+}
+
+.poke-detail {
+  border: 2px solid black;
+  width: 35%;
+  margin-left: 45%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.poke-img-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 2px solid black;
+  background-size: cover;
+}
+
+.grass {
+  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2Ff%2Ff2%2FAmie_Grass_Wallpaper.png&hash=ef6934c65140')
+}
+
+.fire {
+  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2F2%2F24%2FAmie_Fire_Wallpaper.png&hash=54e886e94ab7')
+}
+
+.water {
+  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2F9%2F98%2FAmie_Water_Wallpaper.png&hash=060e436756d8');
+}
+
+.bug {
+  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2F9%2F95%2FAmie_Bug_Wallpaper.png&hash=cb7257fb158e');
+}
+
+.dragon {
+  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2Fe%2Fed%2FAmie_Dragon_Wallpaper.png&hash=4dc98cbc5f5e');
+}
+
+.rock {
+  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2F3%2F35%2FAmie_Rock_Wallpaper.png&hash=9966a29c2e07');
+}
+
+.ghost {
+  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2F6%2F61%2FAmie_Ghost_Wallpaper.png&hash=310cf7963542');
+}
+
+.poison {
+  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2F1%2F1a%2FAmie_Poison_Wallpaper.png&hash=fb14a54b019e');
+}
+
+.electric {
+  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2F6%2F62%2FAmie_Electric_Wallpaper.png&hash=444643f71d1e');
+}
+
+.normal {
+  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2F4%2F48%2FAmie_Normal_Wallpaper.png&hash=7b53dd19981e');
+}
+
+.ground {
+  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2F3%2F34%2FAmie_Ground_Wallpaper.png&hash=770f9fe43179');
+}
+
+.fighting {
+  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2Fa%2Fa4%2FAmie_Fighting_Wallpaper.png&hash=b96f68aa540c');
+}
+
+.psychic {
+  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2Fd%2Fd8%2FAmie_Psychic_Wallpaper.png&hash=06c281bee1a4')
+}
+
+.poke-img-container img {
+  max-height: 350px;
+  height: 60%;
+  width: 60%;
+
+  padding: 40px;
+}
+
+.poke-detail ul {
+  width:inherit;
+  list-style-type: none;
+}
+
+.poke-stats {
+  display: flex;
+  justify-content: center;
 }

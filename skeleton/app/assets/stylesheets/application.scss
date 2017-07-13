@@ -15,12 +15,18 @@
  */
 @import "variables";
 
+// @font-face {
+//     font-family: myFirstFont, sans-serif;
+//     src: url(./app/assets/images/Pokemon GB.ttf);
+//     font-weight: bold;
+// }
+
 html {
   height: 100%;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-image: url('http://orig03.deviantart.net/9019/f/2012/113/6/a/pokedex_background_1_hd_by_zeminio-d4xdou8.jpg');
   background-size: cover;
   color: $grey;
@@ -108,4 +114,9 @@ header img:active {
   -webkit-transform: translateY(10px);
   -ms-transform: translateY(10px);
   transform: translateY(10px);
+}
+
+a {
+  text-decoration: none;
+  color: #073387;
 }

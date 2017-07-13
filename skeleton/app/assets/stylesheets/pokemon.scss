@@ -1,3 +1,35 @@
 // Place all the styles related to the pokemon controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.poke-thumbnail {
+  height: 50px;
+  width: 50px;
+}
+
+.poke-list{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.poke-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20%;
+  border: 2px solid #d43316;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.poke-list-item:hover {
+  background-color: #16D484;
+  padding: 20px;
+}
+
+.poke-list-item:active img {
+  -webkit-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}

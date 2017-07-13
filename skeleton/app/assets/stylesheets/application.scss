@@ -21,7 +21,8 @@ html {
 
 body {
   font-family: sans-serif;
-  background: white;
+  background-image: url('http://orig03.deviantart.net/9019/f/2012/113/6/a/pokedex_background_1_hd_by_zeminio-d4xdou8.jpg');
+  background-size: cover;
   color: $grey;
   font-size: 12px;
   height: 100%;
@@ -101,4 +102,10 @@ h3 {
   font-size: 24px;
   text-align: center;
   color: $black;
+}
+
+header img:active {
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
 }

@@ -2,7 +2,13 @@ import {RECEIVE_SINGLE_POKEMON} from '../actions/pokemon_actions';
 import {merge} from 'lodash';
 
 const defaultState = {
-  items: [],
+  items: [{
+    image_url: ''
+  },{
+    image_url: ''
+  },{
+    image_url: ''
+  }],
   pokemon: {
 
   }

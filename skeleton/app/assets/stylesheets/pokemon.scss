@@ -33,14 +33,21 @@
 }
 
 .poke-list-item:active img {
-  -webkit-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  transform: rotate(-30deg);
+  // -webkit-transform: rotate(-30deg);
+  // -ms-transform: rotate(-30deg);
+  // transform: rotate(-30deg);
+  -webkit-transform: translateX(200px);
+  -ms-transform: translateX(200px);
+  transform: translateX(200px);
+  transition-duration: 1s;
 }
+
+///////
 
 .poke-detail {
   border: 2px solid black;
-  width: 35%;
+  width: 45%;
+  height: 85%;
   margin-left: 45%;
   position: fixed;
   display: flex;
@@ -52,10 +59,54 @@
 .poke-img-container {
   display: flex;
   justify-content: center;
+  flex: 2;
   width: 100%;
   border: 2px solid black;
   background-size: cover;
 }
+
+
+.poke-img-container img {
+  max-height: 350px;
+  height: 60%;
+  width: 60%;
+
+  padding: 40px;
+}
+
+.poke-detail ul {
+  width:inherit;
+  list-style-type: none;
+}
+
+.poke-stats {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.poke-items {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.poke-items li img{
+  height: 60%;
+  width: 60%;
+}
+
+
+
+
+
+//Image locations
+
+
 
 .grass {
   background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2Ff%2Ff2%2FAmie_Grass_Wallpaper.png&hash=ef6934c65140')
@@ -106,23 +157,9 @@
 }
 
 .psychic {
-  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2Fd%2Fd8%2FAmie_Psychic_Wallpaper.png&hash=06c281bee1a4')
+  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2Fd%2Fd8%2FAmie_Psychic_Wallpaper.png&hash=06c281bee1a4');
 }
 
-.poke-img-container img {
-  max-height: 350px;
-  height: 60%;
-  width: 60%;
-
-  padding: 40px;
-}
-
-.poke-detail ul {
-  width:inherit;
-  list-style-type: none;
-}
-
-.poke-stats {
-  display: flex;
-  justify-content: center;
+.ice {
+  background-image: url('https://pokemondb.net/pokebase/qa-content/imgproxy.php?img=http%3A%2F%2Fcdn.bulbagarden.net%2Fupload%2Fb%2Fb5%2FAmie_Ice_Wallpaper.png&hash=25cc3c52904c');
 }

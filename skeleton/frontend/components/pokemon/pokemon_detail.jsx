@@ -12,7 +12,9 @@ export default class PokemonDetail extends React.Component {
   }
 
   render() {
+    console.log(this.props);
     return(
+
       <section className="poke-detail">
         <div className={`poke-img-container ${this.props.pokemonDetail.pokemon.poke_type}`}>
             <img src={this.props.pokemonDetail.pokemon.image_url} />
@@ -26,9 +28,23 @@ export default class PokemonDetail extends React.Component {
             <li> Moves: {this.props.pokemonDetail.pokemon.moves} </li>
           </ul>
         </div>
+        <div className = 'poke-items-container'>
+          <ul className = 'poke-items'> Items
+            <li>
+                <img src={this.props.pokemonDetail.items[0].image_url} />
+            </li>
+            <li>
+              <img src={this.props.pokemonDetail.items[1].image_url} />
+            </li>
+            <li>
+                <img src={this.props.pokemonDetail.items[2].image_url} />
+            </li>
+          </ul>
+        </div>
 
 
       </section>
     );
   }
 }
+  // <img src={this.props.items} />

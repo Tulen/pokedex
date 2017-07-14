@@ -10,6 +10,7 @@ const defaultState = {
     image_url: ''
   }],
   pokemon: {
+    moves: []
 
   }
 };

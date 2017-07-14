@@ -8,4 +8,8 @@ class Api::PokemonController < ApplicationController
     @pokemon = Pokemon.find(params[:id])
   end
 
+  def create
+    
+  end
+
 end

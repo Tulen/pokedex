@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   list-style-type: none;
+
 }
 
 .poke-list-item {
@@ -33,9 +34,7 @@
 }
 
 .poke-list-item:active img {
-  // -webkit-transform: rotate(-30deg);
-  // -ms-transform: rotate(-30deg);
-  // transform: rotate(-30deg);
+
   -webkit-transform: translateX(200px);
   -ms-transform: translateX(200px);
   transform: translateX(200px);
@@ -45,23 +44,32 @@
 ///////
 
 .poke-detail {
-  border: 2px solid black;
-  width: 45%;
+  background-image: url('http://img08.deviantart.net/3cc2/i/2012/014/3/8/pokedex_project_cover_by_nmajmani-d4me5u4.png');
+
+  border: 5px solid #d43316;
+  border-radius: 25px;
+  padding: 5px;
+  width: 35%;
   height: 85%;
-  margin-left: 45%;
+  margin-left: 40%;
   position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  color: white;
+}
 
+.poke-detail h3 {
+  color: white;
 }
 
 .poke-img-container {
+  margin-top: 15px;
   display: flex;
   justify-content: center;
   flex: 2;
-  width: 100%;
-  border: 2px solid black;
+  width: 85%;
+  border-radius: 25px;
   background-size: cover;
 }
 
@@ -70,8 +78,13 @@
   max-height: 350px;
   height: 60%;
   width: 60%;
-
   padding: 40px;
+}
+
+.poke-img-container img:active {
+  -webkit-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
 }
 
 .poke-detail ul {
@@ -80,24 +93,53 @@
 }
 
 .poke-stats {
+  width: 100%;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.poke-stats ul {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+
+
+.stats-container {
+  display: flex;
+  width: 100%;
+  align-content: space-around;
+}
+
+.stats-container ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.poke-items-container {
+  width: 100%;
+  flex: 1;
+  display: flex;
 
 }
 
 .poke-items {
-  flex: 1;
+  height: 200px;
   display: flex;
   flex-direction: row;
-
 }
 
+.poke-items li {
+  display: flex;
+  align-items: center;
+}
 
 .poke-items li img{
-  height: 60%;
-  width: 60%;
+  height: 20%;
+  width: 20%;
 }
 
 
